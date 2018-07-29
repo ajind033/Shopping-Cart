@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <title>Your Basket</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="topHeader">
+            <center>
+                <p>Grocery Offer Zone Top Deals &amp; Discounts</p>
+            </center>
+        </div>
+        <div class="mainHeader">
+            <img src="image/logo1.png" height="80px" />
+            <ul id="links">
+                <li>
+                    <a href="#">Customer Care</a>
+                </li>
+                <li>
+                    <a href="#">Sign Up &amp; Sign In</a>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+            </ul>
+        </div>
+        <hr/>
+    </div>
+    <div class="wholeBody">
+        <div class="mainBody">
+            <center>
+                <div class="searchbar">
+                    <br/>
+                    <h4>How can we help you today?</h4>
+                    <input type="search" id="givenItem" onkeyup="finditem()" placeholder="Search your items here" />
+                </div>
+                <div class="searchTable">
+                    <table id="searchResult"></table>
+                </div>
+                <div id="bodyButtons">
+                    <button onclick="reset()">Clear</button>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </center>
+        </div>
+        <div id="cartBody">
+            <center>
+                <div class="mainCart">
+                    <br/>
+                    <h4>Your cart is here</h4>
+                    <br/>
+                    <table id="cartTable"></table>
+                </div>
+                <div class="cartButton">
+                    <button onclick="checkMeOut()">Checkout</button>
+                </div>
+            </center>
+        </div>
+    </div>
+    <div id="checkout">
+        <center>
+            <h4> Checkout Table</h4>
+            <a href="javascript:void(0)" style="float: right;" onclick="document.getElementById('checkout').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+            <table id="checkTable" border=1></table>
+        </center>
+    </div>
+    <div id="fade"></div>
+    <div class="footer">
+        <hr/>
+        <div class="mainFooter">
+            <div class="moreAboutCompany">
+                <h3>More About Company</h3>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                    eos qui ratione voluptatem sequi nesciunt.</p>
+            </div>
+            <div class="keepConnected">
+                <h3>Keep Connected</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>&nbsp; Like us on Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>&nbsp; Follow us on Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-google-plus-official" aria-hidden="true"></i>&nbsp; Add us on Google Plus
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-pinterest" aria-hidden="true"></i> &nbsp; Follow us on Pinterest
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li>
+                        <a href="tel:09876543212">
+                            <i class="fa fa-mobile" aria-hidden="true"></i>&nbsp; 09876543212
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:contact@your.basket.com">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp; contact@your.basket.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <center>
+                &copy; 2018 Your Basket. All Rights Reserved.
+            </center>
+        </div>
+    </div>
+    <script src="javascript/main.js"></script>
+</body>
+
+</html>
